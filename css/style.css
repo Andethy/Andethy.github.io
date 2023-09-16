@@ -843,11 +843,11 @@ strong {
   transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
 
-.text-color-1:hover, .text-color-2:hover, .text-color-3:hover, .text-color-4:hover {
+.text-color-1:hover, .text-color-2:hover, .text-color-3:hover, .text-color-4:hover, .text-custom {
   /*padding: 2px;*/
   /*font-size: xx-large;*/
   color: transparent;
-  background-image: repeating-linear-gradient(45deg, var(--backup-color-1-light), var(--backup-color-2-light), var(--backup-color-3-light), var(--backup-color-4-light), var(--backup-color-1-light));
+  background-image: repeating-linear-gradient(45deg, var(--backup-color-1-light), var(--backup-color-2), var(--backup-color-3-light), var(--backup-color-4), var(--backup-color-1-light));
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -855,8 +855,8 @@ strong {
   /*0 0 25px rgba(61,129,245,0.5),*/
   /*0 0 50px rgba(61,129,245,0.5),*/
   /*0 0 75px rgba(61,129,245,0.5);*/
-  animation: rainbow 5s ease infinite;
-  animation-duration: 5s;
+  animation: rainbow 3s ease infinite;
+  animation-duration: 4.5s;
   animation-timing-function: ease;
   animation-delay: 0s;
   animation-iteration-count: infinite;
@@ -888,4 +888,14 @@ strong {
   line-height: 30px;
   margin: -10px;
 
+}
+
+.big-link {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
