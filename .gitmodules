@@ -1,3 +1,6 @@
 [submodule "aframe"]
 	path = aframe
 	url = https://github.com/andethy/aframe-lmc2700.git
+[submodule "js-practice"]
+	path = js-practice
+	url = https://github.com/Andethy/js-practice-lmc2700
