@@ -77,19 +77,27 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html#home">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../index.html#about">Statement</a>
+            <a class="nav-link" href="#about">Statement</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#portfolio">Portfolio</a>
+          <!-- Dropdown for Portfolio -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="../index.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+              <li><a class="dropdown-item custom-link" href="../portfolio/tech.html">Technical</a></li>
+              <li><a class="dropdown-item custom-link" href="../portfolio/audio.html">Sound</a></li>
+              <li><a class="dropdown-item custom-link" href="../portfolio/education.html">Education</a></li>
+              <li><a class="dropdown-item custom-link" href="../portfolio/discography.html">Discography</a></li>
+            </ul>
           </li>
+          <!-- End Dropdown -->
 
           <li class="nav-item">
-            <a class="nav-link" href="../index.html#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
