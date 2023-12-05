@@ -899,3 +899,14 @@ strong {
   justify-content: center;
   transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-link, .navbar .dropdown-toggle {
+  line-height: 1.5; /* Ensure consistent line height */
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  vertical-align: middle; /* Align text vertically in the middle */
+}
