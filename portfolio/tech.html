@@ -77,16 +77,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href=../index.html>Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Statement</a>
+                        <a class="nav-link" href="../index.html#about">Statement</a>
                     </li>
 
                     <!-- Dropdown for Portfolio -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../index.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                        <a class="nav-link" href="../index.html#portfolio" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
                             <li><a class="dropdown-item custom-link" href="../portfolio/tech.html">Technical</a></li>
                             <li><a class="dropdown-item custom-link" href="../portfolio/audio.html">Sound</a></li>
@@ -97,7 +97,7 @@
                     <!-- End Dropdown -->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -120,57 +120,117 @@
             </div>
         </div>
 
-
-
     </section>
 
+    <section class="section-padding pb-0" id="project-showcase">
+        <div class="container mb-5 pb-lg-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-3" data-aos="fade-up">Project Showcase</h2>
+                    <p class="mb-4" data-aos="fade-up" data-aos-delay="300">Discover a curated selection of my most impactful projects, each demonstrating a unique blend of creativity and technical skill.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="../images/ostinato.png" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Ostinato</h5>
+                            <p class="card-text">I've created a program that intelligently generates royalty-free music, focusing on ostinatos (short music phrases), for aspiring musicians. This project was inspired by the challenge of finding quality, royalty-free backing tracks. We used AI to generate and process musical data, confronting technical hurdles along the way. Our aim was to balance uniqueness and creativity with technical ease for artists. The project, built with various technologies including Python, React, and Google Cloud, aims for further expansion and personalization. For more details, visit the Ostinato project on <a href="https://devpost.com/software/ostinato">Devpost.</a></p>
+                            <a href="https://ostinato.tech/" class="btn btn-primary">Try it out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="../images/baja.png" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">BBP Website</h5>
+                            <p class="card-text">The website for Baja Badlands Productions, designed with a focus on multimedia and videography services, showcases our expertise in creating professional quality content. It features a sleek and user-friendly interface, highlighting our portfolio in various domains like film, TV, advertising, and music. The site incorporates engaging visuals and provides clear contact information, reflecting our commitment to creative collaboration. The development emphasizes a modern and visually appealing layout, suitable for showcasing our production capabilities and services.</p>
+                            <a href="https://bbadlands.com" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="section-padding pb-0">
         <div class="col-12">
-            <h2 class="mb-5 text-center" data-aos="fade-up">Projects on Github</h2>
+            <h2 class="mb-5 text-center" data-aos="fade-up">Other Projects on Github</h2>
         </div>
 
         <div class="container mb-5 pb-lg-5">
-            <div class="row">
-                <div class="col-12">
+            <!-- Carousel start -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 400px;">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <!-- First item -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center"> <!-- Row for alignment -->
+                            <div class="col-md-8"> <!-- Column for text -->
+                                <h2 class="mb-3" data-aos="fade-left">pyxl2sql</h2>
+                                <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+                                    I focus on converting Excel data into SQL-ready format. This tool is particularly crafted for the CS 4400 summer semester course. By running the main.py file, the conversion process is automated, generating the necessary SQL data outputs efficiently. This project primarily utilizes Python, reflecting my programming approach and language proficiency.
+                                </p>
 
+                                <a data-aos="fade-up" data-aos-delay="500" href="https://www.github.com/Andethy/pyxl2sql/" class="btn btn-primary text-decoration-underline">Learn More</a>
+                            </div>
+                            <div data-aos="fade-right" class="col-md-4"> <!-- Column for image -->
+                                <img class=" img-fluid" src="../images/pysql.png"> <!-- Responsive image -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second item -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center"> <!-- Row for alignment -->
+                            <div class="col-md-8"> <!-- Column for text -->
+                                <h2 class="mb-3" data-aos="fade-left">SeniorQuote</h2>
+                                <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+                                    I've developed an encryption algorithm specifically for encoding a senior quote. This project includes a Unix executable named 'Quote-D&E' which can be run in the terminal. The user can choose to encode or decode a message by passing 'e' for encoding or 'd' for decoding as an argument in the sys.argv[1]. This tool is designed for Mac systems and is written in Python.
+                                </p>
+                                <a data-aos="fade-up" data-aos-delay="500" href="https://www.github.com/Andethy/SeniorQuote/" class="btn btn-primary text-decoration-underline">Learn More</a>
+                            </div>
+                            <div data-aos="fade-right" class="col-md-4"> <!-- Column for image -->
+                                <img class=" img-fluid" src="../images/quote.png"> <!-- Responsive image -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third item -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center"> <!-- Row for alignment -->
+                            <div class="col-md-8"> <!-- Column for text -->
+                                <h2 class="mb-3" data-aos="fade-left">CrevoAppUtils</h2>
+                                <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+                                    I've developed utility applications for the FRC team Crevolution Robotics. The primary focus of this project is on scouting app data transfer. The repository is mainly composed of Python code, with a small portion in Batchfile, reflecting the tools and languages I've employed in this project. This project is part of an ongoing effort to support Crevolution Robotics' technical needs.
+                                </p>
+                                <a data-aos="fade-up" data-aos-delay="500" href="https://www.github.com/Andethy/CrevoAppUtils/" class="btn btn-primary text-decoration-underline">Learn More</a>
+                            </div>
+                            <div data-aos="fade-right" class="col-md-4"> <!-- Column for image -->
+                                <img class=" img-fluid" src="../images/crevo.png"> <!-- Responsive image -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-6 col-12 mt-3 mb-lg-5">
-                    <h2 class="mb-3" data-aos="fade-left">pyxl2sql</h2>
-                    <p class="me-4" data-aos="fade-up" data-aos-delay="300">
-                        Converting Excel spreadsheets to SQL databases is a tedious process, especially when the spreadsheets are large and complex.
-                        This project attempted to automate the process by converting Excel spreadsheets to mySQL tables using Python.
-                    </p>
-                </div>
-
-                <div data-aos="fade-right" class="col-lg-6 col-12 mt-lg-3 mb-lg-5 d-flex justify-content-center">
-                    <a class="big-link text-decoration-underline" href="https://www.github.com/Andethy/pyxl2sql/">Repository link</a>
-                </div>
-                <div>
-                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
             </div>
-
-            <div class="row">
-
-                <div data-aos="fade-left" class="col-lg-6 col-12 mt-lg-3 mb-lg-5 d-flex justify-content-center order-2 order-lg-1">
-                    <a class="big-link text-decoration-underline" href="https://www.github.com/Andethy/midi-gen/">Repository link</a>
-                </div>
-
-                <div class="col-lg-6 col-12 mt-3 mb-lg-5 order-sm-1 order-md-1 order-lg-2">
-                    <h2 class="mb-3 d-flex justify-content-end" data-aos="fade-right">midi-gen</h2>
-                    <p class="me-4 d-flex justify-content-end" data-aos="fade-up" data-aos-delay="300">
-                        This project is an attempt to generate MIDI files using Python.
-                        So far it can generate random progressions in a given key signature and mode.
-                    </p>
-                </div>
-
-            </div>
-
+            <!-- Carousel end -->
         </div>
-
     </section>
+
 
     <div class="section-padding col-12 d-flex justify-content-evenly">
         <h2 class="mb-3 text-decoration-underline" data-aos="fade-up"><a href="../index.html#portfolio" class="text-custom">Return to Portfolio</a></h2>
